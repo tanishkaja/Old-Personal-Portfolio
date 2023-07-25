@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* background: #080808; */
+    background: #080808;
     color: #fff;
 }
 #header{
@@ -41,11 +41,8 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 28px;
-    font-family: 'Playfair Display', serif;
+    font-size: 18px;
     position: relative;
-    margin-left: 100px; 
-    margin-right: 10px; 
 }
 nav ul li a::after{
     content: '';
@@ -63,28 +60,19 @@ nav ul li a:hover::after{
 .header-text{
     margin-top:20% ;
     font-size: 30px;
-    margin-left: 500px; 
-}
-.header-text p{
-    font-size: 55px;
-    font-family: 'Crimson Text', serif;
-    color: #c4627a;
+    /* margin-left: -40px; */
 }
 .header-text h1{
-    font-size: 25px;
-    font-family: 'Bacasime Antique', serif;
+    font-size: 40px;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #fff;
-    font-family: 'Bacasime Antique', serif;
+    color: #da7b93;
 }
 /* -------about------ */
 #about{
     padding: 80px 0;
-    background-color: rgb(123, 145, 142);
-    font-family: 'Crimson Text', serif;
-    color:#fff ;
+    color:#ababab ;
 }
 .row{
     display: flex;
@@ -102,10 +90,8 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .subtitle{
-    font-size: 50px;
-    font-family: 'Playfair Display', serif;
+    font-size: 60px;
     color: #fff;
-    margin-bottom: 10px;
 }
 .tabtitles{
     display: flex;
@@ -113,8 +99,7 @@ nav ul li a:hover::after{
 }
 .tablinks{
     margin-right:50px;
-    font-size: 25px;
-    font-family: 'Crimson Text', serif;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -137,10 +122,8 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tabcontents ul li span{
-    color:#080808;
-    font-size:30px;
-    font-family: 'Playfair Display', serif;
-    font-style: bold;
+    color:#fbeec1;
+    font-size:14px;
 }
 .tabcontents{
     display: none;
@@ -150,8 +133,7 @@ nav ul li a:hover::after{
 }
 /* --------------------------------- */
 #services{
-    padding: 80px 0;
-    background-color: rgb(76, 99, 99);
+    padding: 30px 0;
 }
 .projectlist{
     display: grid;
@@ -190,7 +172,6 @@ nav ul li a:hover::after{
 /* ------------------------------------ */
 #portfolio{
     padding:50px 0;
-    background-color: black;
 }
 .worklist{
     display: grid;
@@ -254,7 +235,7 @@ nav ul li a:hover::after{
     margin: 50px auto ;
     width: fit-content;
     border: 1px solid #da7b93 ;
-    padding: 12px 40px;
+    padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
@@ -264,10 +245,6 @@ nav ul li a:hover::after{
     background: #da7b93;
 }
 /* ----------------------------------------------------- */
-#contact{
-    background-color: #080808;
-    padding-top: 40px;
-}
 .contactleft{
     flex-basis: 35%;
 }
@@ -316,7 +293,7 @@ form input, form textarea{
     border-radius: 6px;
 }
 form .btn2{
-    padding: 12px 40px;
+    padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
@@ -327,50 +304,22 @@ form .btn2{
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 /* -------------------------------SMALL SCREEN --------------------------- */
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width:1200px){
-    nav ul li a{
-        margin-left: 50px;
-        margin-right: 10px;
-    }
-}
-@media only screen and (max-width:800px){
-    .header-text{
-        font-size: 30px;
-        margin-top: 300px;
-        margin-left: 300px;
-    }
-    .header-text h1 {
-        /* display: none; */
-        margin-top: 55%;
-        font-size: 20px;
-        margin-top: 40px;
-    }
-}
-@media only screen and (max-width:900px){
-    nav ul li a{
-        font-size: 20px;
-        margin-left: 15px;
-        margin-right: 10px;
-    }
-}
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/phone-background1.png);
+        background-image: url(images/phone-background.png);
     }
-    .header-text {
-        /* margin-top: 100%; */
-        font-size: 30px;
-        margin-left: 200px;
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
     }
     #header-text h1{
-        /* display: none; */
-        font-size: 10px; ;
+        font-size: 30px; ;
     }
     nav .fa-solid{
         display: block;
@@ -398,7 +347,7 @@ nav .fa-solid{
         cursor: pointer;
     }
     .subtitle{
-        font-size: 30px;
+        font-size: 40px;
     }
     .about-col-1,.about-col-2{
         flex-basis: 100%;
